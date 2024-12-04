@@ -1,0 +1,53 @@
+body{
+    background-image: url(./road.jpg);
+    background-repeat:no-repeat ;
+}
+.body{
+    border: 2px solid black;
+    background-color: red;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 60px;
+    height: 40px;
+    width: 80px;
+    margin-top: 400px;
+    
+    animation: moveCar 5s linear infinite;
+    animation-name: moveCar;
+}
+.wheel1{
+    border: 2px solid black;
+    background-color: white;
+    height: 20px;
+    width: 20px;
+    border-radius: 100px;
+    margin-top: -10px;
+    margin-left:5px ;
+    animation: spinWheels 5s linear infinite;
+}
+.wheel2{
+    border: 2px solid black;
+    background-color: white;
+    height: 20px;
+    width: 20px;
+    border-radius: 100px;
+    margin-top: -25px;
+    margin-left: 50px;
+    animation: spinWheels 5s linear infinite;
+}
+
+@keyframes spinWheels {
+    from{
+      
+        transform: translateX(-10px);
+    }
+    to{
+        transform: translate(600px);
+    }
+}
+@keyframes moveCar {
+    from {
+      transform: translateX(-10px);
+    }
+    to {
+      transform: translateX(600px);
+    }
